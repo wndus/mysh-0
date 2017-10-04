@@ -9,7 +9,7 @@ int do_cd(int argc, char** argv) {
   else{
 	int d;
 	d=chdir(argv[1]);
-	if(d==1) printf("Fail");
+	if(d==-1) printf("Fail");
 	else printf("change");
 
 	}
