@@ -23,6 +23,8 @@ void mysh_parse_command(const char* command,
    
    p=strtok(buf,"' ',\n, \t");
 
+if(p==NULL){*argc=1; strcpy((*argv)[0],"");return;}
+
    while(p != NULL)
   {
     
